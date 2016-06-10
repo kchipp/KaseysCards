@@ -1,0 +1,7 @@
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\obj\Debug\KaseysCards.csprojResolveAssemblyReference.cache
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\bin\Debug\Trainings.txt
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\bin\Debug\KaseysCards.exe.config
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\bin\Debug\KaseysCards.exe
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\bin\Debug\KaseysCards.pdb
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\obj\Debug\KaseysCards.exe
+C:\Users\Owner\Documents\Visual Studio 2015\Projects\KaseysCards\KaseysCards\obj\Debug\KaseysCards.pdb
