@@ -15,35 +15,50 @@ namespace KaseysCards
         {
             User user = new User();
             user.displayWelcome();
-            user.enterFirstName();
-            user.enterLastName();
-            user.enterEmail();
-            user.enterExperienceLevel();
+            user.getFirstName();
+            user.getLastName();
+            user.getEmail();
+            user.getExperienceLevel();
+            user.setFirstName();
+            user.setLastName();
+            user.setEmail();
+            user.setExperienceLevel();           
             user.makeChoice();
-            
-            Wallet wallet = new Wallet();
-            wallet.getBalance();
+      
             Console.ReadLine();
             Catalogue catalogue = new Catalogue();
-            catalogue.pickAClass();
-            Console.WriteLine("Please enter the number of the class you wish to enroll in.");
-            Console.ReadLine();
-            catalogue.enrollCB();
-            //wallet.addMoney();
-
-
-            Inventory inventory = new Inventory();
-            CardStock cardstock = new CardStock();
-            ////cardstock.cardstockAvailable();
-            //cardstock.restockCS();
-
-            //Shop shop = new Shop();
-            //shop.buyCS(wallet);
-            //double purchase = shop.buyCS(user.wallet);
-            //Console.WriteLine(purchase);
-            //Console.WriteLine(user.wallet.getBalance());
-           
             
+           
+            Console.ReadLine();
+            CardStock cardstock = new CardStock();
+           
+            user.buySupplies();
+            Console.ReadLine();
+            user.whatsNext();
+
+            string choices;
+            choices = Console.ReadLine();
+            switch (choices.ToLower())
+            {
+                case "class":
+                    catalogue.pickAClass();
+                    break;
+                case "tools":
+                    cardstock.pickATool();
+                    break;
+                default:
+                    user.makeChoice();
+                    break;
+            }
+
+
+            
+            
+            
+
+          
+
+
         }
 
         

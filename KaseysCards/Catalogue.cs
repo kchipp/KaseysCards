@@ -20,9 +20,8 @@ namespace KaseysCards
             trainings.Add("3 - Advanced Card Making");
             foreach (string training in trainings)
             {
-                Console.WriteLine(training);
-                
-                Console.ReadLine();
+                Console.WriteLine(training);               
+               
                 
             }
 
@@ -31,19 +30,24 @@ namespace KaseysCards
         {
             Console.WriteLine("Please enter the number of the class you wish to enroll in.");
             int pick;
+
+
             pick = int.Parse(Console.ReadLine());
             switch (pick)
             {
                 case 1:
                     Console.WriteLine("Card Basics");
+                    Console.WriteLine("You have been enrolled in Card Basics.  We'll see you there.");
                     Console.ReadLine();
                     break;
                 case 2:
                     Console.WriteLine("Paper Making");
+                    Console.WriteLine("You have been enrolled in Paper Making  We'll see you there.");
                     Console.ReadLine();
                     break;
                 case 3:
                     Console.WriteLine("Advanced Card Design");
+                    Console.WriteLine("You have been enrolled in Advanced Card Design.  We'll see you there.");
                     Console.ReadLine();
                     break;
                 default:
@@ -54,12 +58,10 @@ namespace KaseysCards
 
             }
         }
-        public string enrollCB()
-        {
-            string cb = enrolled;
-            enrolled
+        
+          
 
-        }
+}
 
 
 
@@ -92,4 +94,4 @@ namespace KaseysCards
 
 
     }
-}
+//}

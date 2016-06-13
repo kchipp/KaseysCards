@@ -12,10 +12,10 @@ namespace KaseysCards
         int basicPrice = 25;
         int paperPrice = 20;
         int advancedPrice = 45;
-        
+
         public Training()
         {
-            
+
         }
         public void viewTrainings()
         {
@@ -30,22 +30,10 @@ namespace KaseysCards
             }
             myReader.Close();
             Console.ReadLine();
+
+
         }
-        public string chooseBasics()
-        {
-            return chooseBasics();            
-        }
-        public string choosePaper()
-        {
-            return choosePaper();
-        }
-        public string chooseAdvanced()
-        {
-            return chooseAdvanced();
-        }
-            
-        }
-      
-        
+
+    }   
      
 }

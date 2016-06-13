@@ -9,13 +9,14 @@ namespace KaseysCards
     class Wallet
     {
         double money;
+      
 
         public Wallet()
         {
             money = 50;
         }
         
-        public double getBalance()
+        public double balance(double amount)
         {
             return money;
         }
@@ -25,7 +26,19 @@ namespace KaseysCards
             {
                 Console.WriteLine("Please add money so you can buy you items.");
             }
+            else
+            {
+                money -= amount;
+            }
+        
         }
+        public void addMOney(double amount)
+        {
+            money += amount;
+        }
+        
+       
     }
+
 }
 

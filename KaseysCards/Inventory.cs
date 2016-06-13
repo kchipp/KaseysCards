@@ -12,20 +12,20 @@ namespace KaseysCards
         public string color;
         public string size;
         public int quantity;
-
         public double cost;
         public int productAvailable;
+        
 
         public Inventory()
         {
-            quantity = 50;    
+            quantity = 50;
         }
         
+
+
+
+
+
     }
-    
-    
-
-
-    
 }
 

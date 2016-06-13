@@ -11,6 +11,14 @@ namespace KaseysCards
     public Embellishments()
         {
             quantity = 50;
+            List<string> emb = new List<string>();
+            emb.Add("Rhinestones");
+            emb.Add("Mini flowers");
+            emb.Add("Ribbons");
+            emb.Add("Labels");
+            emb.Add("Glitter");
+            emb.Add("Brads");
+            emb.Add("Tags");
         }   
         public void restockEmbells()
         {
