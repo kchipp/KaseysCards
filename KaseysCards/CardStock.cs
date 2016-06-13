@@ -11,6 +11,8 @@ namespace KaseysCards
         public CardStock()
         {
             quantity = 50;
+            Console.WriteLine("Kasey's Cards\n\n");
+            Console.WriteLine("What would you like to buy today?");
             List<string> papers = new List<string>();
             papers.Add("1-Matte");
             papers.Add("2-Pearl");
@@ -27,14 +29,14 @@ namespace KaseysCards
             
                   
         }
-        public void pickATool()
+        public void pickAPaper()
         {
-            Console.WriteLine("Please enter the number of the tool you wish to buy.");
-            int pickT;
+            Console.WriteLine("Please enter the number of the paper you wish to buy.");
+            int pickP;
 
 
-            pickT = int.Parse(Console.ReadLine());
-            switch (pickT)
+            pickP = int.Parse(Console.ReadLine());
+            switch (pickP)
             {
                 case 1:
                     Console.WriteLine("Matte-press enter to continue");
@@ -65,7 +67,7 @@ namespace KaseysCards
                     Console.ReadLine();
                     break;
                 default:
-                    pickATool();
+                    pickAPaper();
                     break;
 
             }

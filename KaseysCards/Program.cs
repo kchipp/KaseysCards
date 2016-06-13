@@ -24,33 +24,30 @@ namespace KaseysCards
             user.setEmail();
             user.setExperienceLevel();           
             user.makeChoice();
-      
+            user.displaySupplyMenu();
+
             Console.ReadLine();
             Catalogue catalogue = new Catalogue();
-            
-           
-            Console.ReadLine();
-            CardStock cardstock = new CardStock();
-           
-            user.buySupplies();
-            Console.ReadLine();
+            catalogue.pickAClass();
             user.whatsNext();
 
-            string choices;
-            choices = Console.ReadLine();
-            switch (choices.ToLower())
-            {
-                case "class":
-                    catalogue.pickAClass();
-                    break;
-                case "tools":
-                    cardstock.pickATool();
-                    break;
-                default:
-                    user.makeChoice();
-                    break;
-            }
+            Console.ReadLine();
+            user.buySupplies();
+            CardStock cardstock = new CardStock();
+            cardstock.pickAPaper();
+            Tools tools = new Tools();
+            tools.pickATool();
+            Embellishments embellishments = new Embellishments();
+            embellishments.pickAnEmbellishment();
+            StampsAndStickers stamps = new StampsAndStickers();
+            stamps.pickAStamp();
+            
+            Console.ReadLine();
 
+
+
+
+            user.whatsNext();
 
             
             

@@ -130,13 +130,14 @@ namespace KaseysCards
         {
             
         }
-        private void displaySupplyMenu()
+        public void displaySupplyMenu()
         {
 
             Console.WriteLine("Kasey's Cards\n\n");
             Console.WriteLine("What would you like to buy today?");
-            Console.WriteLine("Enter T for Tools.\nEnter E for Embellishments.\nEnter C for Cardstock.\nEnter S for Stamps & Stickers.");string supplyOptions;
-            displaySupplyMenu();
+            Console.WriteLine("Enter T for Tools.\nEnter E for Embellishments.\nEnter C for Cardstock.\nEnter S for Stamps & Stickers.");
+            string supplyOptions;
+            
            
             supplyOptions = getUserSupplyMenuChoice();
             switch (supplyOptions.ToLower())
